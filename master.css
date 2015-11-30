@@ -1,15 +1,26 @@
-body{
+body
+{
+  background-color: #F6CECE;
   font-size: 16px;
 }
-li{
+li
+{
   display: inline-block;
   font-size: 1.5em;
 }
-.general{
-  background-color: olive;
+.general
+{
+  background-color: blue;
   margin: 1em;
   padding: 0.5em;
 }
-.center{
+.general2
+{
+  background-color: #298A08;
+  margin: 1em;
+  padding: 0.5em;
+}
+.center
+{
   text-align: center;
 }
