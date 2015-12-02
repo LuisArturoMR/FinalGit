@@ -1,15 +1,31 @@
 body{
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Verdana"
+  color: white;
+  background-color: rgb(190,190,190);
 }
 li{
   display: inline-block;
   font-size: 1.5em;
 }
 .general{
-  background-color: olive;
-  margin: 1em;
-  padding: 0.5em;
+	  margin: 1em;
+	  padding: 0.5em;
 }
 .center{
   text-align: center;
+}
+h1{
+	color: white;
+	font-family:"Arial";
+	background-color: black;
+}
+h2{
+	font-size: 35px;
+	font-family: "Arial Black";	
+	color: rgb(0,215,150);
+}
+p{
+	color: Black;
+	font-family: "Verdana";
 }
