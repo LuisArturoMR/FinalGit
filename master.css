@@ -71,4 +71,5 @@ body{
   background: linear-gradient(#7d7e7d ,#0e0e0e );
    background-attachment: fixed;
     overflow-x:hidden;
+	display:block;
 }

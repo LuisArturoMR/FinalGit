@@ -5,12 +5,17 @@
     <title>Ya sé usar Git</title>	
 	<link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
   </head>
+  <script type = "text/javascript">
+	function confirm_alert() {
+		return confirm("Please click on OK to continue.");
+	}
+  </script>
   <body>
   
      <div id="header">
 	  <ul class="nav">
           <li><a href ="#">Inicio</a></li>
-          <li><a href ="yo.html">¿Quién soy?</a></li> 
+          <li><a href ="yo.html" onclick="adios">¿Quién soy?</a></li> 
           <li><a href ="#">Proyectos personales</a>
 			<ul>
 				<li><a href="#">En curso</a></li>
@@ -46,15 +51,20 @@
 			</br>
 			</br>
 			Atte. Esteban 
+			</br>
+			</br>
+			</br>
+			</br>
+			PD: El JS se aparece cuando da click en algun link de SocialMedia
 		</p>
 	</div>
 	
 	<div>
 		<ul class ="social">
-			<li><a href="https://www.facebook.com" class="fb">Facebook</a></li>
-			<li><a href="https://twitter.com/?lang=es" class="twit">Twitter</a></li>
-			<li><a href="https://www.instagram.com/grandoisseau/" class="inst">Instagram</a></li>
-			<li><a href="https://www.youtube.com" class="yt">YouTube</a></li>
+			<li><a href="https://www.facebook.com" class="fb" onclick="return confirm_alert(this);">Facebook</a></li>
+			<li><a href="https://twitter.com/?lang=es" class="twit" onclick="return confirm_alert(this);">Twitter</a></li>
+			<li><a href="https://www.instagram.com/grandoisseau/" class="inst" onclick="return confirm_alert(this);">Instagram</a></li>
+			<li><a href="https://www.youtube.com" class="yt" onclick="return confirm_alert(this);">YouTube</a></li>
 		</ul>
 	</div>
 	
