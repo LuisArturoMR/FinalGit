@@ -35,17 +35,32 @@ ul{
 	text-align:center;
 	font-family:Helvetica, sans-serif;
 }
-.social li{
-	padding:10px 10px;
+.social li a {
+	padding:10px 15px;
 	background-color:black;
 	display:block;
 	float:down;
 	position:relative;	
-	
 	text-decoration:none;
 	text-align:center;
 	font-family:Helvetica, sans-serif;
 	color:#fff;
+}
+
+/*.social li a:hover{
+	background-color:#434343;
+}*/
+.fb:hover{
+	background-color:#3b5998;
+}
+.inst:hover{
+	background-color:#517fa4;
+}
+.twit:hover{
+	background-color:#00aced;
+}
+.yt:hover{
+	background-color:#bb0000;
 }
 .social{
 	float:left;	
