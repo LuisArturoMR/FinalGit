@@ -7,7 +7,7 @@
 	width:5500px;
 	font-family:Arial, Helvetica, sans-serif;
 }
-ul,ol{
+ul{
 	list-style:none;
 }
 .nav li a{
@@ -34,6 +34,21 @@ ul,ol{
 .texto{
 	text-align:center;
 	font-family:Helvetica, sans-serif;
+}
+.social li{
+	padding:10px 10px;
+	background-color:black;
+	display:block;
+	float:down;
+	position:relative;	
+	
+	text-decoration:none;
+	text-align:center;
+	font-family:Helvetica, sans-serif;
+	color:#fff;
+}
+.social{
+	float:left;	
 }
 body{
   font-size: 16px;
