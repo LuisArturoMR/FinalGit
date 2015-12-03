@@ -2,35 +2,71 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ya sé usar Git</title>
-    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+    <title>Ya sé usar Git</title>	
+	<link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
   </head>
+  <script type = "text/javascript">
+	function confirm_alert() {
+		return confirm("Please click on OK to continue.");
+	}
+  </script>
   <body>
-    <h1 class="center">Gracias a Git mi vida ha cambiado :3</h1>
-    <header>
-      <nav>
-        <ul>
-          <li><a href ="">Soy un menú</a></li>
-          <li><a href ="">Soy un menú</a></li>
-          <li><a href ="">Soy un menú</a></li>
-          <li><a href ="">Soy un menú</a></li>
+  
+     <div id="header">
+	  <ul class="nav">
+          <li><a href ="#">Inicio</a></li>
+          <li><a href ="yo.html" onclick="adios">¿Quién soy?</a></li> 
+          <li><a href ="#">Proyectos personales</a>
+			<ul>
+				<li><a href="#">En curso</a></li>
+				<li><a href="#">Futuros</a></li>
+			</ul>
+		  </li>
+          <li><a href ="#">Portafolio</a>
+			<ul>
+				<li><a href="#">Dibujos</a></li>
+				<li><a href="#">Fotografía</a></li>
+				<li><a href="#">Pintura</a></li>
+				<li><a href="#">Apps y juegos</a></li>
+				<li><a href="#">Textos</a></li>
+			</ul>
+		  </li>
+		  <li><a href = "#">Contacto</a></li>
         </ul>
-      </nav>
-    </header>
-    <section>
-      <article class="general">
-        <h2>Este es un artículo</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-
-      <article class="general">
-        <h2>Este es un artículo</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-    </section>
-  </body>
+	</div>
+		</br>
+		</br>
+		</br>
+		
+	<div class="texto">
+		<div><h1> ¡HOLA!</h1></div>		
+		</br>
+		</br>
+		<h3>
+			¡Gracias por visitar mi página web!
+		</h3>
+		</br>
+		<p>
+			Encontraras cosas realacionadas a mi, y las cosas que me gustan.
+			</br>
+			</br>
+			Atte. Esteban 
+			</br>
+			</br>
+			</br>
+			</br>
+			PD: El JS se aparece cuando da click en algun link de SocialMedia
+		</p>
+	</div>
+	
+	<div>
+		<ul class ="social">
+			<li><a href="https://www.facebook.com" class="fb" onclick="return confirm_alert(this);">Facebook</a></li>
+			<li><a href="https://twitter.com/?lang=es" class="twit" onclick="return confirm_alert(this);">Twitter</a></li>
+			<li><a href="https://www.instagram.com/grandoisseau/" class="inst" onclick="return confirm_alert(this);">Instagram</a></li>
+			<li><a href="https://www.youtube.com" class="yt" onclick="return confirm_alert(this);">YouTube</a></li>
+		</ul>
+	</div>
+	
+  </body>	
 </html>
