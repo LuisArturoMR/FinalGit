@@ -1,0 +1,806 @@
+acronym {}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-family: Consolas, Monaco, 'Courier New', Courier, monospace, sans-serif;
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url('/fonts/lato-regular/lato-regular-webfont.eot');
+  src: url('../fonts/lato-regular/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-regular/lato-regular-webfont.woff') format('woff'),
+       url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+       url('../fonts/lato-regular/lato-regular-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'latobold';
+  src: url('../fonts/lato-bold/lato-bold-webfont.eot');
+  src: url('../fonts/lato-bold/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-bold/lato-bold-webfont.woff') format('woff'),
+       url('../fonts/lato-bold/lato-bold-webfont.ttf') format('truetype'),
+       url('../fonts/lato-bold/lato-bold-webfont.svg#latobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latoblack';
+  src: url('../fonts/lato-black/lato-black-webfont.eot');
+  src: url('../fonts/lato-black/lato-black-webfont.Peot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-black/lato-black-webfont.woff') format('woff'),
+       url('../fonts/lato-black/lato-black-webfont.ttf') format('truetype'),
+       url('../fonts/lato-black/lato-black-webfont.svg#latoblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'latolight';
+  src: url('../fonts/lato-light/lato-light-webfont.eot');
+  src: url('../fonts/lato-light/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-light/lato-light-webfont.woff') format('woff'),
+       url('../fonts/lato-light/lato-light-webfont.ttf') format('truetype'),
+       url('../fonts/lato-light/lato-light-webfont.svg#latolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoitalic';
+    src: url('../fonts/lato-italic/lato-italic-webfont.eot');
+    src: url('../fonts/lato-italic/lato-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-italic/lato-italic-webfont.woff') format('woff'),
+         url('../fonts/lato-italic/lato-italic-webfont.ttf') format('truetype'),
+         url('../fonts/lato-italic/lato-italic-webfont.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/kristen/kristen-itc-regular.eot");
+  src: url("../fonts/kristen/kristen-itc-regular.eot#iefix") format("embedded-opentype"),
+  url("../fonts/kristen/kristen-itc-regular.woff") format("woff"),
+  url("../fonts/kristen/kristen-itc-regular.ttf") format("truetype"),
+  url("../fonts/kristen/kristen-itc-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body 
+{
+    
+}
+nav 
+{
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    display: block;
+    overflow: hidden;
+    width: 100%; 
+}
+
+nav ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li 
+{
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; 
+}
+nav > ul > li > a > .caret 
+{
+    border-top: 4px solid #aaa;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+
+    -webkit-transition: color 0.1s linear;
+    -moz-transition: color 0.1s linear;
+    -o-transition: color 0.1s linear;
+    transition: color 0.1s linear; 
+}
+nav > ul > li > a 
+{
+    color: #aaa;
+    display: block;
+    padding: 0 24px;
+    text-decoration: none;
+}
+nav > ul > li:hover 
+{
+    background-color: #47A3DA;
+    color: white;
+}
+
+nav > ul > li:hover > a 
+{
+    color: rgb( 255, 255, 255 );
+    color: white;
+}
+nav > ul > li:hover > a > .caret {
+    border-top-color: rgb( 255, 255, 255 );
+    color: white;
+}
+nav > ul > li > div 
+{
+    background-color: rgb(100,149,237);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 165px;
+    visibility: hidden;
+    z-index: 100;
+
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+}
+
+nav > ul > li:hover > div {
+display: block;
+opacity: 1;
+visibility: visible;
+}
+
+nav > ul > li > div ul > li {
+display: block;
+}
+
+nav > ul > li > div ul > li > a {
+color: #fff;
+display: block;
+padding: 12px 24px;
+text-decoration: none;
+color: white;
+}
+
+nav > ul > li > div ul > li:hover > a {
+background-color: rgba( 255, 255, 255, 0.1);
+color: white;
+}
+.right, .left{
+    overflow: hidden;
+    vertical-align: middle;
+    width:45%;
+    float:left;margin-left=5%;
+    margin-left: 10px;
+    height: 23%;
+
+}
+.left {
+	text-align: center;
+}
+.right 
+{
+    margin-left=5%;
+}
+#homePage {
+    background-image: url("../Images/background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    padding:0 !important;
+    min-height: 100% !important;
+}
+#logInPage {
+	padding:0 !important;
+    min-height: 100% !important;
+}
+#homePageContent
+{
+}
+#progressBarProyectOfTheWeek
+{
+    margin-top: 10%;
+}
+#homePageFooter 
+{
+	background-color: #1E1E1E;
+}
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+
+
+
+#cssmenu 
+{
+    padding: 0; 
+    margin: 0; 
+    border: 0;
+}
+#cssmenu ul, #cssmenu li 
+{
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+#cssmenu ul 
+{
+    position: relative;
+    z-index: 597; 
+}
+#cssmenu ul li 
+{ 
+    float: left; 
+    min-height: 1px; 
+    vertical-align: middle;
+}
+#cssmenu ul li.hover, #cssmenu ul li:hover 
+{
+    position: relative; 
+    z-index: 599; 
+    cursor: default;
+}
+#cssmenu ul ul 
+{
+    visibility: hidden; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    z-index: 598; 
+    width: 50%;
+}
+#cssmenu ul ul li 
+{
+    float: none;
+}
+#cssmenu ul ul ul 
+{
+    top: 0; 
+    left: auto; 
+    right: -94.5%; 
+}
+#cssmenu ul li:hover > ul 
+{
+    visibility: visible;
+}
+#cssmenu ul ul 
+{
+    bottom: 0; left: 0;
+}
+#cssmenu ul ul 
+{
+    margin-top: 0; 
+}
+#cssmenu ul ul li 
+{
+    font-weight: normal;
+}
+#cssmenu a 
+{
+    display: block; 
+    line-height: 1em;
+    text-decoration: none; 
+}
+#cssmenu 
+{
+  background: #1B9BFF;
+  border-bottom: 4px solid #1b9bff;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+  #cssmenu > ul { *display: inline-block; }
+
+  #cssmenu:after, #cssmenu ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#cssmenu a {
+    background: #1B9BFF;
+    color: #CBCBCB;
+    padding: 0 20px;
+}
+#cssmenu ul { 
+    text-transform: uppercase;
+}
+
+#cssmenu ul ul 
+{
+      border-top: 4px solid #1b9bff;
+      text-transform: none;
+      min-width: 95%;
+}
+#cssmenu ul ul a 
+{
+        background: #1b9bff;
+        color: #FFF;
+        border: 1px solid #0082e7;
+        border-top: 0 none;
+        line-height: 150%;
+        padding: 16px 20px;
+}
+#cssmenu ul ul ul 
+{ 
+    border-top: 0 none;
+}
+
+#cssmenu ul ul li 
+{ 
+    position: relative 
+}
+#cssmenu > ul > li > a 
+{ 
+    line-height: 48px;  
+}
+
+#cssmenu ul ul li:first-child > a 
+{ 
+    border-top: 1px solid #0082e7;
+}
+#cssmenu ul ul li:hover > a {
+    background: #35a6ff; 
+}
+
+#cssmenu ul ul li:last-child > a
+{
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 0 #1b9bff;
+}
+#cssmenu ul ul li:last-child:hover > a 
+{
+    border-radius: 0 0 0 3px; 
+}
+
+#cssmenu ul ul li.has-sub > a:after
+{
+      content: '+';
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -8px;
+}
+#cssmenu ul li:hover > a, #cssmenu ul li.active > a
+{
+      background: #1b9bff;
+      color: #FFF;
+}
+#cssmenu ul li.has-sub > a:after 
+{
+      margin-left: 5px;
+}
+    #cssmenu ul li.last ul {
+      left: auto;
+      right: 0;
+}
+#cssmenu ul li.last ul ul {
+        left: auto;
+        right: 99.5%;
+}
+
+.form-group
+{
+    margin-bottom:5px;
+    background-color: #fff;
+    opacity: 0.8;
+}
+.form-control
+{
+    color:black;
+    opacity: 1;
+}
+.form-link
+{
+    background-color:aliceblue;
+    opacity: 0.7;
+    color:black;
+}
+.form-a
+{
+    color:#23527C;
+}
+.mainContent {
+	background-color:white !important;
+}
+.login-background {
+	z-index: -1000;
+}
+.logIn-footer {
+	position: fixed; 
+    margin-top: 2%; 
+    height: 11%;
+}
+.logIn-footer nav h6{
+	margin-left: auto;
+    margin-right: auto;
+}
+.loginBackground {
+    background-image: url("../Images/loginBackground.png");
+    background-size: 100% 100%;
+	
+}
+.projectFeed{
+    background-color:  rgba(218, 182, 117, 0.52);
+    border-radius: 20px;
+    margin:5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    min-height: 150px;  
+    overflow: hidden;
+}
+.projectTitle
+{
+    text-align:center;
+    font-size: 22px ! important; 
+    color:#c7322e;
+    padding:4%;
+}
+.projectDate
+{
+    text-align: center;
+    color: #3B2D16 ;
+    margin-top:12%
+}
+.projectImg
+{
+    max-width: 250px;
+    width: 100%;
+    max-height: 100%;
+    padding:1em;
+}
+.donateImg
+{
+    width: 50%;
+}
+.readImg
+{
+    margin-bottom: 25%;
+    width: 88%;
+    padding-top:2em 
+}
+
+.ytFeed
+{
+    background-color:  rgba(177, 79, 79, 0.3);
+    border-radius: 20px;
+    margin:5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    overflow: hidden;
+    min-height: 150px;
+}
+.ytTitle
+{
+    text-align:center;
+    font-size: 15px ! important; 
+    color:white;
+    padding:4%;
+    margin-top:7%
+}
+.ytDate
+{
+    font-size: 14px;
+    text-align: center;
+    color: #BC4E37;
+}
+.ytImg
+{
+    width: 75%; 
+    margin: 10%;
+}
+.emailBody
+{
+    height: 33% !important;
+}
+.emailForm 
+{
+     background-color:  rgba(79, 83, 177, 0.3);
+    border-radius: 20px;
+    margin:5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+	
+}
+.emailSubject
+{
+    background-color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    width:75%;
+    border-radius: 20px;
+    margin-bottom:10%;
+    
+}
+.emailBody
+{
+    background-color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    width:75%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    
+}
+.networkFeeds {
+	height: auto !important;
+    text-align: center;
+   
+}
+.networkImg
+{
+    max-width: 35%;
+}
+.loginButton
+{
+    background: #33B5E5 none repeat scroll 0% 0%;
+    color: white;
+}
+#logInContent {
+	text-align: center
+}
+.loginAlerts
+{
+    width:75%;
+    margin-left: 14%;
+}
+body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+ .container {
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding:0px !important;
+        margin: 0px !importantr
+        -webkit-transition:  left 0.4s ease-in-out;
+        -moz-transition:  left 0.4s ease-in-out;
+        -ms-transition:  left 0.4s ease-in-out;
+        -o-transition:  left 0.4s ease-in-out;
+        transition:  left 0.4s ease-in-out;
+    }
+    .container.close-sidebar {
+        position: relative;
+        width: 100%;
+        left: 0;
+        -webkit-transition:  left 0.4s ease-in-out;
+        -moz-transition:  left 0.4s ease-in-out;
+        -ms-transition:  left 0.4s ease-in-out;
+        -o-transition:  left 0.4s ease-in-out;
+        transition:  left 0.4s ease-in-out;
+    }
+    
+    .container.open-sidebar {
+        
+        left: 240px;
+    }
+    
+    #sidebar {
+        position: absolute;
+        left: -240px;
+        background: #ce9f49 ;
+        width: 240px;
+        height: 103%;
+        box-sizing: border-box;
+    }
+    #sidebar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #sidebar ul li {
+        margin: 0;
+    }
+    #sidebar ul li a {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 100;
+        color: white;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid #fff;
+        -webkit-transition:  background 0.3s ease-in-out;
+        -moz-transition:  background 0.3s ease-in-out;
+        -ms-transition:  background 0.3s ease-in-out;
+        -o-transition:  background 0.3s ease-in-out;
+        transition:  background 0.3s ease-in-out;
+    }
+    #sidebar ul li:hover a {
+        background: #93743D  ;
+    }
+    .main-content {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+    }
+    .main-content .content{
+        margin-top:-70px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    width: 100%;
+    }
+    .main-content .content h1{
+        font-weight: 100;
+    }
+    .main-content .content p{
+        width: 100%;
+        line-height: 160%;
+    }
+    .main-content #sidebar-toggle {
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        float: left;
+    }
+    .main-content #sidebar-toggle .bar{
+         display: block;
+        width: 18px;
+        margin-bottom: 3px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 1px;   
+    }
+    .main-content #sidebar-toggle .bar:last-child{
+         margin-bottom: 0;   
+    }
+.homaPageHeader 
+{
+	border:0px;
+    background: #dab675;
+    z-index: 30;
+    
+}
+.textSection
+{
+    text-align: center;
+    padding: 1em;
+}
+.imageText
+{
+    width:75%;
+    margin-bottom:4%;
+    margin-top:6%
+}
+
+.titleSection 
+{
+    padding-top: 14px;
+    margin-top: 0 !important;   
+    text-align: center;
+    color:#7caa19;
+}
+.subtitle
+{
+    font-size: 16px;
+}
+@-webkit-keyframes moveHeader {
+    from {left: 0px;}
+    to {left: 240px;}
+}
+@-webkit-keyframes initialHeader {
+    from {left: 240px;}
+    to {left: 0px;}
+}
+.openHeader {
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding:0px !important;
+    margin: 0px !importantr
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+.closeHeader {
+    position: relative;
+    width: 100%;
+    left: 0;
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+.headerPosition
+{
+    position: fixed;
+}
+.collapsible 
+{
+	
+}
+.collapsibleDiv
+{
+    padding: 0 !important;
+}
+.userPhoto
+{
+    border-radius: 50%;
+    max-width: 60%;
+}
+.profileContent
+{
+    font-size: 20px;
+}
+.slideName
+{
+    width:45%;
+    margin-top: -62px;
+    margin-bottom: 50px;
+    margin-left:92px;
+}
+.slideBaner 
+{
+    margin-top:30px;
+    width: 88%;
+    border-radius: 10px;
+    margin-left: 5.5%
+}
+.uploadButtons
+{
+    background: rgba(255, 255, 255, 0.02);
+    border:0 !important;
+    width:47% !important;
+    display: inline
+}
+.loginSlidebar
+{
+    font-weight: bold !important;
+}
+.footerImage
+{
+    width:66px;
+}
+.footerNav 
+{
+    background-image: url(../Images/footerBackground.png);
+    /*background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-size: 100% 100%;
+}
+#forgotPassword
+{
+    background-image: url("../Images/loginBackground.png");
+    background-size: 100% 100%;
+}
+.onlineButton
+{
+    background-color: #C7322E;
+    border: 1px solid #8690A2;
+    border-radius: 2px 2px 2px 2px;
+    font-family: 'latoblack';
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 7px;
+    padding: 11px 44px;
+    text-align: center;
+    color: white;
+}
