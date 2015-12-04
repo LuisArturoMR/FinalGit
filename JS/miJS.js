@@ -12,7 +12,7 @@ var emailTip="<div class='loginAlerts'  ><div class='alert alert-info'><strong>F
 var donate="http://www.centerofhope-haiti.org/donate-form";
 var userId;
 var retries = 0;
-var sponsorLink="http://www.gyosolutions.com/";
+var sponsorLink="https://en.wikipedia.org/wiki/Donald_Trump_presidential_campaign,_2016";
 var logged=false;
 function onBodyLoad()
 {    
@@ -431,7 +431,8 @@ function inAppBrowser(url)
     window.open(url,"_blank", "location=no");
 }
 function createUser()
-{
+{}
+/*{
     var name= document.getElementById("nameTC");
     name=name.value;
     var date= document.getElementById("dateTC");
@@ -508,7 +509,7 @@ function createUser()
     {
         $("#errorLogin").html(emptyError);
     }
-}
+}*/
 function ereaseLoginForm()
 {
     var name= document.getElementById("nameTC");
