@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>Gameplays y Teasers</title>
+         <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+          <h1 class="center">.  Gaming Stuff, videojuegos y más videojuegos  .</h1>
+          <p>
+          </p>
+
+       <section>
+          <nav>
+           <ul>
+              <li><a href ="index.html">Inicio</a></li>
+              <li><a href ="gameplay_video.html">Gameplays y videos</a></li>
+              <li><a href ="">Reseñas</a></li>
+              <li><a href ="">Otros</a></li>
+           </ul>
+         </nav> 
+               
+       </section>
+       <section>
+          <article class="general">
+             <h2>Witchers ebrios y vestidos de mujer</h2>
+             <iframe width="854"
+             height="480"
+             src="https://www.youtube.com/embed/Jv-fDIgiVlQ?feature=player_detailpage"
+             frameborder="0"
+             allowfullscreen></iframe>
+
+              <p>
+                  ¡Toda una patada en el hígado!</br>
+                  De: Reina DCD
+              </p>
+           </article>
+           
+           <article class="general">
+            <h2 class="centro"> Halo Animación Batalla</h2>
+            <center>
+            	<iframe width="854" height="480" 
+            	src="https://www.youtube.com/embed/rdTKUaWMYvo" 
+            	frameborder="0" allowfullscreen>
+            	</iframe>
+            	<p> Click the button to display an alert box:
+             		<button onclick="myFunction()">Try it</button>
+         <script> function myFunction() {alert("I am an alert box!");}
+         </script>
+            	</p>
+            	</center>
+          </article>
+
+          <article class="general">
+            <h2>Fallout 4: 6 cosas que hacer</h2>
+            <iframe width="854" height="480"
+            src="https://www.youtube.com/embed/Ll26BkbLKbs?feature=player_detailpage"
+            frameborder="0" allowfullscreen></iframe>
+             <p>
+                  Una lista de 6 cosas que hacer en Fallout 4 </br>
+                  De: PlayStation Access
+             </p>
+          </article>
+          
+          <article class="general">
+            <h2>Red vs Blue</h2>
+          	<iframe width="854" height="480" 
+          	src="https://www.youtube.com/embed/Ke9wtbzGjCI" 
+          	frameborder="0" allowfullscreen></iframe>
+        </article>
+          
+        </section>
+        
+        <footer>
+			<p class="center">&copy; 2015. All rights reserved :P </p>
+		</footer>
+          
+    </body>
+</html>
