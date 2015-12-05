@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>Calculadora en Javascript</title>
+         <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+	</head>
+
+<script language = "javascript">
+	function valida(){
+		var num = calc.numero1.value;
+		if(num == "" || isNaN(num)){
+			alert("Introduce un n�mero");
+			calc.numero1.focus();
+		}
+	}
+
+	function res(){
+		var num1 = calc.numero1.value;
+		var num2 = calc.numero2.value;
+		var signo = calc.operacion.value;
+		var res;
+
+			switch(signo){
+				case '+':
+					res = parseInt(num1)+parseInt(num2);
+					break;
+				case '-':
+					res = parseInt(num1)-parseInt(num2);
+					break;
+				case '*':
+					res = parseInt(num1)*parseInt(num2);
+					break;
+				case '/':
+					res = parseInt(num1)/parseInt(num2);
+					break;
+			}
+                    document.calc.resultado.value = res; /*document.id de la forma.id de donde vas a desplegar.value = a lo que quieres desplegar*/
+	}
+
+</script>
+
+<body>
+<center><h1> CALCULADORA </h1></center>
+<center>
+
+<form name="calc">
+	<table border = "1">
+		<tr>
+			<td> N&uacute;mero 1: </td>
+			<td> <input type="text" size ="5" name="numero1" onBlur="valida()" /> </td>
+		</tr>
+		<tr>
+			<td> Operaci&oacute;n </td>
+			<td>
+				<select name ="operacion">
+					<option select = "+">+</option>
+					<option select = "-">-</option>
+					<option select = "*">x</option>
+					<option select = "/">/</option>
+				</select>
+			</td>
+		</tr>		<tr>
+			<td> N&uacute;mero 2: </td>
+			<td> <input type="text" size ="5" name="numero2"  /> </td>
+		</tr>
+	</table>
+	<center><input type="text" id="resultado" name="resultado" /></center>
+	<center><input type="button" value="calcular" onClick = "res()" /><center>
+
+</form>
+
+</center>
+</body>
+
+</html>
