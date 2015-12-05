@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
 =======
 >>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
 a {
@@ -9,6 +12,7 @@ a {
     font-size: 1em;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 body{
   background: rgb(47, 79, 77);
@@ -71,11 +75,14 @@ li{
 =======
 =======
 >>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
+=======
+>>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
 body{
   background: rgb(47, 79, 77);
   font-size: 16px;
   font-family: sans-serif;
   padding: inherit;
+<<<<<<< HEAD
 }
 
 h2{
@@ -95,6 +102,27 @@ p{
   color: white;
 }
 
+=======
+}
+
+h2{
+  padding bottom: 0.3em;
+  text-align: left;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  color: white;
+}
+
+p{
+  padding-top: 0.2em;
+  padding-bottom: 1em;
+  text-align: justify;
+  font-size: 1em;
+  font-family: sans-serif;
+  color: white;
+}
+
+>>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
 li{
   display: inline-block;
   padding-left: 5em;
@@ -133,9 +161,12 @@ h1 {
 
 .center{
 <<<<<<< HEAD
+<<<<<<< HEAD
   text-align: center;
 >>>>>>> 0f3c5792636ba059de63cc10fa03be6c4ec9f288
 =======
+=======
+>>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
   border-radius: 5px;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
@@ -144,5 +175,8 @@ h1 {
   
   font-size: 2em;
   color: white;
+<<<<<<< HEAD
+>>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
+=======
 >>>>>>> 83411ebbdd7022557f100ff635c43d5484dcc323
 }
